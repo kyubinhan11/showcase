@@ -6398,7 +6398,7 @@ button.close {
   text-align: center;
   list-style: none;
 }
-.carousel-indicators li {
+.carousel-control-indicators li {
   display: inline-block;
   width: 10px;
   height: 10px;
