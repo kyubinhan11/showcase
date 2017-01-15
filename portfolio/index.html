@@ -56,9 +56,9 @@
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
-                    <li class="page-scroll">
+                    <!-- <li class="page-scroll">
                         <a href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -154,7 +154,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -164,8 +164,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+                    The form should work on most web servers, but if the form is not working you may need to configure your web server differently.
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -206,7 +206,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="text-center">
@@ -276,10 +276,12 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Vision Assistance Tool <br>P-eye</h2>
+                            <h2>Vision Assistance Tool <br>(Standard P-eye)</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/redpeye.png" class="img-responsive img-centered" alt="">
-                            <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services deployed on AWS and Google Vision Cloud service to analyse image contents and relay it back in an audio format for people who are visually impaired.</p>
+                            <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services deployed on AWS and Google Vision Cloud service to analyse image contents and relay it back in an audio format for people who are visually impaired. </p>
+                            <!-- <p>The standard P-eye communicates with a cloud service directly. Users can control it with a button to take a picture of the object that they are trying to recognize.</p> -->
+                            <p>The web service provides RESTful API that receives an encoded string of an image, analyzes contents of the image, and respond back to the client with the result</p>
                             <ul class="list-inline intro-social-buttons">
                               <li>
                                   <a target="_blank" href="https://kyubinhan11.github.io/showcase/p-eye" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Webpage</span></a>
@@ -310,10 +312,11 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                       <div class="modal-body">
-                          <h2>Vision Assistance Tool <br>P-eye</h2>
+                          <h2>Vision Assistance Tool <br>(Blue p-eye)</h2>
                           <hr class="star-primary">
                           <img src="img/portfolio/bluepeye.png" class="img-responsive img-centered" alt="">
                           <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services deployed on AWS and Google Vision Cloud service to analyse image contents and relay it back in an audio format for people who are visually impaired.</p>
+                          <p>The Android app acts as a bridge between P-eye and the web service. It takes an encoded string of the image from P-eye through Bluetooth, sends the string to the web service through HTTP request, gets the result back, and relay it in an audio format using TTS.</p>
                           <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a target="_blank" href="https://kyubinhan11.github.io/showcase/p-eye" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Webpage</span></a>
