@@ -120,7 +120,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/web.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/tt.png" class="img-responsive" alt="">
                     </a>
                 </div>
 
@@ -142,7 +142,7 @@
                     <p>Kyubin Han is a self-taught developer who have been taking various courses from MOOC platforms. He loves software developing because he can contribute to society by building applications that can help people.</p>
                 </div>
                 <div class="col-lg-4">
-                    <p>He developed a vision assistance tool called P-eye for people who are visually impaired. He also built and launched a website where people can translate documents collaboratively for immigration to Canada. </p>
+                    <p>He developed a vision assistance tool called P-eye for people who are visually impaired. He also built and launched a website where people can collaboratively translate documents for immigration to Canada. </p>
                 </div>
             </div>
         </div>
@@ -271,12 +271,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Vision Assistance Tool <br>(Standard P-eye)</h2>
+                            <h2>Cloud Service for P-eye</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/redpeye.png" class="img-responsive img-centered" alt="">
-                            <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services deployed on AWS and Google Cloud Platform to analyze image content and relay it back in an audio format. It is designed for people who are visually impaired to recognize objects, printed words, and facial expressions.</p>
-                            <!-- <p>The standard P-eye communicates with a cloud service directly. Users can control it with a button to take a picture of the object that they are trying to recognize.</p> -->
-                            <p>The web service provides RESTful API that receives an encoded string of an image, analyzes contents of the image, and respond back to the client with the result</p>
+
+                            <p>The cloud service handles image processing including cropping images, finding contours, and image recognition using OpenCV and Google Cloud Vision API. A lightweight Python web framework, Flask, was used to build RESTful APIs and it is deployed on Amazon Web Services. The Raspberry Pi communicates with the cloud service through HTTP protocol POST in order to analyze the contents of images taken by users.</p>
+                            <br>
+                            <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services and machine learning technologies to analyze image content and relay it back in an audio format. It is designed for people who are visually impaired to recognize objects, printed words, and facial expressions.</p>
                             <ul class="list-inline intro-social-buttons">
                               <li>
                                   <a target="_blank" href="https://kyubinhan11.github.io/showcase/p-eye" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Webpage</span></a>
@@ -309,11 +310,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                       <div class="modal-body">
-                          <h2>Vision Assistance Tool <br>(Blue p-eye)</h2>
+                          <h2>Android Application for P-eye</h2>
                           <hr class="star-primary">
                           <img src="img/portfolio/bluepeye.png" class="img-responsive img-centered" alt="">
-                          <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services deployed on AWS and Google Cloud Platform to analyze image content and relay it back in an audio format. It is designed for people who are visually impaired to recognize objects, printed words, and facial expressions.</p>
-                          <p>The Android app acts as a bridge between P-eye and the web service. It takes an encoded string of the image from P-eye through Bluetooth, sends the string to the web service through HTTP request, gets the result back, and relay it in an audio format using TTS.</p>
+
+                          <p>P-eye with Bluetooth features -dubbed “BlueP-eye”- makes use of the Android mobile environment to enhance the capabilities of the P-eye. The custom designed user interface controls Bluetooth and wireless communication to interact with the P-eye and the cloud service deployed on AWS.</p>
+
+                          <p>It receives an encoded string of the image from P-eye through Bluetooth, sends the string to the web service through HTTP request to analyze image content, gets the result back, and relay it in an audio format using TTS.</p>
+
+                          <p>P-eye is a 3D-printed pair of glasses that utilize cloud computing services and machine learning technologies to analyze image content and relay it back in an audio format. It is designed for people who are visually impaired to recognize objects, printed words, and facial expressions.</p>
+
                           <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a target="_blank" href="https://kyubinhan11.github.io/showcase/p-eye" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Webpage</span></a>
@@ -346,19 +352,16 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                       <div class="modal-body">
-                          <h2>Translate Together</h2>
+                          <h2>Translate Together Website</h2>
                           <hr class="star-primary">
-                          <img src="img/portfolio/angfire.png" class="img-responsive img-centered" alt="">
+                          <img src="img/portfolio/tt.png" class="img-responsive img-centered" alt="">
                           <p>
-                            Translate Together is a website where people can translate documents collaboratively for immigration to Canada.
+                            Translate Together is a website where people can collaboratively translate documents provided from Canada Immigration's website and share with others.
                           </p>
-                          <p>ㅡ Features ㅡ</p>
-                          <ul class="list-inline">
-                            <li>It uses real-time database and authentication from Firebase and AngularJS for data-binding. </li>
-                            <li>It saves user's IP addressees in user history and maintains a blacklist to protect contents from disruption or vandalism.</li>
-                            <li>It provides additional features to the administer (deleting translations, banning users... etc). </li>
-                            <li>It has a report system to prevent users from disrupting contents.</li>
-                          </ul> <br>
+                          <p>The website was built on Firebase which offers real-time database and built-in authentication. AngularJS was chosen for front-end side in order to make use of MVVM design. </p>
+                          <p>
+                            The website saves user's IP addressees in user history, maintains a blacklist to protect contents from disruption or vandalism, and provides additional features to the administer (deleting translations, banning users). Users can also report faulty translations</p>
+                          <br>
                           <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a target="_blank" href="https://canadaforum-18020.firebaseapp.com/#!/" class="btn btn-default btn-lg"><i class="fa fa-link fa-fw"></i> <span class="network-name">Webpage</span></a>
